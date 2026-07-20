@@ -1,0 +1,728 @@
+fileFormatVersion: 2
+guid: 2182a60c35c37534abac7aaee1dd774b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2145511631391514166
+    second: clawgrabber_0
+  - first:
+      213: -1751641892530775815
+    second: clawgrabber_1
+  - first:
+      213: -4794716041981937946
+    second: clawgrabber_2
+  - first:
+      213: -6959761369340104799
+    second: clawgrabber_3
+  - first:
+      213: 4495258898224331112
+    second: clawgrabber_4
+  - first:
+      213: 313247141764358556
+    second: clawgrabber_5
+  - first:
+      213: 11164585580175968
+    second: clawgrabber_6
+  - first:
+      213: 3144623924982563871
+    second: clawgrabber_7
+  - first:
+      213: 386231815915725721
+    second: clawgrabber_8
+  - first:
+      213: 5522917198812279740
+    second: clawgrabber_9
+  - first:
+      213: -2667881193160403786
+    second: clawgrabber_10
+  - first:
+      213: -5518871731630057025
+    second: clawgrabber_11
+  - first:
+      213: -1710119203829124881
+    second: clawgrabber_12
+  - first:
+      213: -2974954642354167009
+    second: clawgrabber_13
+  - first:
+      213: -4224516080395211236
+    second: clawgrabber_14
+  - first:
+      213: -4903804162387444312
+    second: clawgrabber_15
+  - first:
+      213: -4807779947989630654
+    second: clawgrabber_16
+  - first:
+      213: 4070169027808017468
+    second: clawgrabber_17
+  - first:
+      213: 4260189521504188947
+    second: clawgrabber_18
+  - first:
+      213: -8822817642208661789
+    second: clawgrabber_19
+  - first:
+      213: -2768188093583698807
+    second: clawgrabber_20
+  - first:
+      213: 8276010483248278619
+    second: clawgrabber_21
+  - first:
+      213: -5868038634744432774
+    second: clawgrabber_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: clawgrabber_0
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 1101
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac1a075e98c9932e0800000000000000
+      internalID: -2145511631391514166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clawgrabber_1
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 1119
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f89206bafae0b7e0800000000000000
+      internalID: -1751641892530775815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clawgrabber_2
+      rect:
+        serializedVersion: 2
+        x: 1486
+        y: 1095
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e6bccec92fb57db0800000000000000
+      internalID: -4794716041981937946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clawgrabber_3
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 1090
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1af2ff2b8e5f96f90800000000000000
+      internalID: -6959761369340104799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clawgrabber_4
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 1060
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 869331aa62e526e30800000000000000
+      internalID: 4495258898224331112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clawgrabber_5
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 584
+        width: 472
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9165c3ad90e85400800000000000000
+      internalID: 313247141764358556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clawgrabber_6
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 1062
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0622295a12aa72000800000000000000
+      internalID: 11164585580175968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clawgrabber_7
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1006
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f14c7c08cc2f3ab20800000000000000
+      internalID: 3144623924982563871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clawgrabber_8
+      rect:
+        serializedVersion: 2
+        x: 1371
+        y: 487
+        width: 300
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9936c9c4acb2c5500800000000000000
+      internalID: 386231815915725721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clawgrabber_9
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 988
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb3f91f3ee755ac40800000000000000
+      internalID: 5522917198812279740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clawgrabber_10
+      rect:
+        serializedVersion: 2
+        x: 1486
+        y: 987
+        width: 12
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b49aba9038c9fad0800000000000000
+      internalID: -2667881193160403786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clawgrabber_11
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 985
+        width: 33
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb9de3b76670963b0800000000000000
+      internalID: -5518871731630057025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clawgrabber_12
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 875
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe0f03c05af6448e0800000000000000
+      internalID: -1710119203829124881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clawgrabber_13
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 875
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f13a497c386d6b6d0800000000000000
+      internalID: -2974954642354167009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clawgrabber_14
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 880
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1e2e10e1018f55c0800000000000000
+      internalID: -4224516080395211236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clawgrabber_15
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 876
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ad70d4881032fbb0800000000000000
+      internalID: -4903804162387444312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clawgrabber_16
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 858
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24105d92c95574db0800000000000000
+      internalID: -4807779947989630654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clawgrabber_17
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 854
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3c3b468a252c7830800000000000000
+      internalID: 4070169027808017468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clawgrabber_18
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 849
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31a39116ccb3f1b30800000000000000
+      internalID: 4260189521504188947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clawgrabber_19
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 854
+        width: 37
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ee6a16891e0f8580800000000000000
+      internalID: -8822817642208661789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clawgrabber_20
+      rect:
+        serializedVersion: 2
+        x: 1682
+        y: 862
+        width: 68
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9845a7a689b6599d0800000000000000
+      internalID: -2768188093583698807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clawgrabber_21
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 849
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5c2c63bfab4ad270800000000000000
+      internalID: 8276010483248278619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clawgrabber_22
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 848
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a773acfa3f9809ea0800000000000000
+      internalID: -5868038634744432774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      clawgrabber_0: -2145511631391514166
+      clawgrabber_1: -1751641892530775815
+      clawgrabber_10: -2667881193160403786
+      clawgrabber_11: -5518871731630057025
+      clawgrabber_12: -1710119203829124881
+      clawgrabber_13: -2974954642354167009
+      clawgrabber_14: -4224516080395211236
+      clawgrabber_15: -4903804162387444312
+      clawgrabber_16: -4807779947989630654
+      clawgrabber_17: 4070169027808017468
+      clawgrabber_18: 4260189521504188947
+      clawgrabber_19: -8822817642208661789
+      clawgrabber_2: -4794716041981937946
+      clawgrabber_20: -2768188093583698807
+      clawgrabber_21: 8276010483248278619
+      clawgrabber_22: -5868038634744432774
+      clawgrabber_3: -6959761369340104799
+      clawgrabber_4: 4495258898224331112
+      clawgrabber_5: 313247141764358556
+      clawgrabber_6: 11164585580175968
+      clawgrabber_7: 3144623924982563871
+      clawgrabber_8: 386231815915725721
+      clawgrabber_9: 5522917198812279740
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
