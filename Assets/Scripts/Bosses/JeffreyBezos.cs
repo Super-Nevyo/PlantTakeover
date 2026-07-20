@@ -7,6 +7,8 @@ public class JeffreyBezos : MonoBehaviour
     public GameObject Missile;
     public Vector3[] MissleLauncher;
     public float PlayerMinDistance;
+    public float OrphanCheckDistance;
+    public Orphan food;
     public float DistanceToPlayer => (TargetPlayer.transform.position - transform.position).magnitude;
     void OnEnable()
     {
@@ -21,4 +23,11 @@ public class JeffreyBezos : MonoBehaviour
     {
         MyStateMachine.Update();
     }
+
+    public bool CheckForOrphans()
+    {
+        //Physics2D.CircleCast()
+        return false;
+    }
+
 }

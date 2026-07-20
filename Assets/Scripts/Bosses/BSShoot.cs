@@ -4,7 +4,7 @@ public class BSShoot : IState
 {
     private JeffreyBezos _bezos;
     private int _missilesFired;
-    private int _step;
+    private float _step;
     private int _stepsBeforeFire;
 
     public BSShoot(JeffreyBezos bezos)
@@ -26,7 +26,7 @@ public class BSShoot : IState
     {
         if (_step < _stepsBeforeFire)
         {
-            _step++;
+            _step += Time.fixedDeltaTime;
         }
         else
         {
