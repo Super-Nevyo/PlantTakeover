@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BSFly
+public class BSFly : IState
 {
     private JeffreyBezos _bezos;
 
@@ -10,7 +10,8 @@ public class BSFly
     }
     public void Enter()
     {
-        
+        //play start flying animation
+
     }
 
     public void Exit()

@@ -1,8 +1,11 @@
 using UnityEngine;
 
-public class BSShoot
+public class BSShoot : IState
 {
     private JeffreyBezos _bezos;
+    private int _missilesFired;
+    private int _step;
+    private int _stepsBeforeFire;
 
     public BSShoot(JeffreyBezos bezos)
     {
@@ -10,7 +13,8 @@ public class BSShoot
     }
     public void Enter()
     {
-        
+        _missilesFired = 0;
+        _step = 0;
     }
 
     public void Exit()
@@ -20,7 +24,26 @@ public class BSShoot
 
     public void Update()
     {
-        
+        if (_step < _stepsBeforeFire)
+        {
+            _step++;
+        }
+        else
+        {
+            if (_bezos.DistanceToPlayer < _bezos.PlayerMinDistance)
+            {
+                _bezos.MyStateMachine.ChangeState(_bezos.MyStateMachine.StateFly);
+                return;
+            }
+            _step = 0;
+            FireMissile();
+        }
+    }
+    private void FireMissile()
+    {
+        _missilesFired++;
+        GameObject missile = Object.Instantiate(_bezos.Missile, _bezos.MissleLauncher[_missilesFired % 2], _bezos.transform.rotation);
+        missile.GetComponent<BezosMisslie>().SelectTarget(_bezos.TargetPlayer.gameObject);
     }
 
     

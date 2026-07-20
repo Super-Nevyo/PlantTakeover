@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BSDie
+public class BSDie : IState
 {
     private JeffreyBezos _bezos;
 

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BSEat
+public class BSEat : IState
 {
     private JeffreyBezos _bezos;
 

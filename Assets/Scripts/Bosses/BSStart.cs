@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BSStart
+public class BSStart : IState
 {
     private JeffreyBezos _bezos;
 
@@ -10,12 +10,13 @@ public class BSStart
     }
     public void Enter()
     {
-        
+        //play cutscene, start music
+        //when its over, change into state shoot
     }
 
     public void Exit()
     {
-        
+        _bezos.TargetPlayer = GameObject.FindFirstObjectByType<Player>();
     }
 
     public void Update()
