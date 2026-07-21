@@ -20,7 +20,7 @@ public class BSEat : IState
 
     public void Update()
     {
-        
+        _bezos.DrainMeatGague();
     }
 
     

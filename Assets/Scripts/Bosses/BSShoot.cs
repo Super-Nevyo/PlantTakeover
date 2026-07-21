@@ -38,6 +38,7 @@ public class BSShoot : IState
             _step = 0;
             FireMissile();
         }
+        _bezos.DrainMeatGague();
     }
     private void FireMissile()
     {

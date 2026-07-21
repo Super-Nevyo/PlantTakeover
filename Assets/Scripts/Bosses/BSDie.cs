@@ -10,7 +10,7 @@ public class BSDie : IState
     }
     public void Enter()
     {
-        
+        _bezos.StopCoroutine(_bezos.SpawnOrphansEvery(_bezos.SpawnOrphansEverySecs, _bezos.SpawnOrphansVeriationSecs));
     }
 
     public void Exit()

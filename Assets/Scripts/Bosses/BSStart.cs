@@ -17,6 +17,7 @@ public class BSStart : IState
     public void Exit()
     {
         _bezos.TargetPlayer = GameObject.FindFirstObjectByType<Player>();
+        _bezos.StartCoroutine(_bezos.SpawnOrphansEvery(_bezos.SpawnOrphansEverySecs, _bezos.SpawnOrphansVeriationSecs));
     }
 
     public void Update()

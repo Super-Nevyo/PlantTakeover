@@ -1,3 +1,5 @@
+using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class JeffreyBezos : MonoBehaviour
@@ -9,6 +11,13 @@ public class JeffreyBezos : MonoBehaviour
     public float PlayerMinDistance;
     public float OrphanCheckDistance;
     public Orphan food;
+    private Orphan spawned;
+    [SerializeField] private Orphan orphanBase;
+    public float SpawnOrphansEverySecs;
+    public float SpawnOrphansVeriationSecs;
+    public float MeatGague;
+    public float MaxMeatGague;
+    public float MeatGagueDrainRate;
     public float DistanceToPlayer => (TargetPlayer.transform.position - transform.position).magnitude;
     void OnEnable()
     {
@@ -28,6 +37,24 @@ public class JeffreyBezos : MonoBehaviour
     {
         //Physics2D.CircleCast()
         return false;
+    }
+    public IEnumerator SpawnOrphansEvery(float between, float veriation)
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(between + Random.Range(-veriation, veriation));
+            spawned = Instantiate(orphanBase);
+            spawned.Target(this);
+        }
+    }
+    public void DrainMeatGague()
+    {
+        MeatGague -= MeatGagueDrainRate * Time.fixedDeltaTime;
+        if (MeatGague <= 0)
+        {
+            MeatGague = 0;
+            MyStateMachine.ChangeState(MyStateMachine.StateDie);
+        }
     }
 
 }
