@@ -7,7 +7,7 @@ public class GrabbyVines
     private GameObject _controlledArm;
     private SpriteRenderer _sprite;
     private Player _player;
-    private float _spriteWidth = 0.2f;
+    private float _spriteWidth = 4f;
 
     public GrabbyVines(Player player, GameObject controlledArm)
     {
@@ -20,8 +20,8 @@ public class GrabbyVines
     {
         _currentLocation = _player.transform.position;
         _locationToGetTo = _player.ArmPosition;
-        _sprite.size = new Vector2((_locationToGetTo - _currentLocation).magnitude, _spriteWidth);
-        _controlledArm.transform.localPosition = new Vector2(0.5f * (_locationToGetTo - _currentLocation).magnitude,0);
+        _sprite.size = new Vector2(_spriteWidth, (_locationToGetTo - _currentLocation).magnitude);
+        _controlledArm.transform.localPosition = new Vector2(0.5f * (_locationToGetTo - _currentLocation).magnitude,-0.5f);
     }
 
     public void Enable()

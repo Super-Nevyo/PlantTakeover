@@ -44,7 +44,7 @@ public class BSShoot : IState
     private void FireMissile()
     {
         _missilesFired++;
-        GameObject missile = Object.Instantiate(_bezos.Missile, _bezos.MissleLauncher[_missilesFired % 2].position, _bezos.transform.rotation);
+        GameObject missile = Object.Instantiate(_bezos.Missile, _bezos.MissleLauncher[_missilesFired % 2].position, _bezos.MissleLauncher[_missilesFired % 2].rotation);
         missile.GetComponent<BezosMisslie>().SelectTarget(_bezos.TargetPlayer.gameObject);
     }
 

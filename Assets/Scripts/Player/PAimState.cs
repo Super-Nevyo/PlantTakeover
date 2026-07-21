@@ -27,8 +27,6 @@ public class PAimState : IState
         _player.ArmPosition = Vector2.MoveTowards(_player.ArmPosition, _player.AimPosition, _player.AimMoveSpeed * Time.fixedDeltaTime);
         _player.transform.rotation = Quaternion.Euler(0, 0, Mathf.Atan2((_player.ArmPosition.y - _player.transform.position.y) * Mathf.Rad2Deg, (_player.ArmPosition.x - _player.transform.position.x) * Mathf.Rad2Deg) * Mathf.Rad2Deg);
         _player.Arms.Update();
-        Debug.Log(_player.AimPosition);
-        Debug.Log(_player.ArmPosition);
     }
 
     public void PickPosition()

@@ -10,6 +10,7 @@ public class PMoveState : IState
     }
     public void Enter()
     {
+        AudioManager.instance.PlaySFX("Plant Move");
     }
 
     public void Exit()
