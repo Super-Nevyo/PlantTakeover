@@ -22,7 +22,7 @@ public class BSStart : IState
 
     public void Update()
     {
-        
+        _bezos.MyStateMachine.ChangeState(_bezos.MyStateMachine.StateShoot);
     }
 
     

@@ -2,15 +2,15 @@ using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class JeffreyBezos : MonoBehaviour
+public class JeffreyBezos : MonoBehaviour, IGrabber
 {
     public BezosStateMachine MyStateMachine;
     public Player TargetPlayer;
     public GameObject Missile;
-    public Vector3[] MissleLauncher;
+    public Transform[] MissleLauncher;
     public float PlayerMinDistance;
     public float OrphanCheckDistance;
-    public Orphan food;
+    public Collider2D food;
     private Orphan spawned;
     [SerializeField] private Orphan orphanBase;
     public float SpawnOrphansEverySecs;
@@ -18,6 +18,9 @@ public class JeffreyBezos : MonoBehaviour
     public float MeatGague;
     public float MaxMeatGague;
     public float MeatGagueDrainRate;
+    public float OrphanMeatAmount;
+    [SerializeField] public Transform GrabTarget;
+    [SerializeField] public float StepsToEat;
     public float DistanceToPlayer => (TargetPlayer.transform.position - transform.position).magnitude;
     void OnEnable()
     {
@@ -35,8 +38,8 @@ public class JeffreyBezos : MonoBehaviour
 
     public bool CheckForOrphans()
     {
-        //Physics2D.CircleCast()
-        return false;
+        food = Physics2D.OverlapCircle(transform.position, OrphanCheckDistance, LayerMask.GetMask("Orphans"));
+        return (food != null);
     }
     public IEnumerator SpawnOrphansEvery(float between, float veriation)
     {
@@ -57,4 +60,13 @@ public class JeffreyBezos : MonoBehaviour
         }
     }
 
+    public Transform GetGrabTarget()
+    {
+        return GrabTarget;
+    }
+
+    public void UnGrab()
+    {
+        MyStateMachine.ChangeState(MyStateMachine.StateShoot);//StateFly); if state fly exists put it here
+    }
 }

@@ -1,13 +1,15 @@
 using UnityEngine;
 
-public class Orphan : MonoBehaviour, IBombable
+public class Orphan : MonoBehaviour, IBombable, IGrabbable
 {
     private JeffreyBezos _bezos;
-    private float speed;
+    [SerializeField] private float speed;
     private Rigidbody2D rb;
     [SerializeField] private Vector2 spawnHalfExtent;
     [SerializeField] private Vector2 spawnOffset;
     [SerializeField] private float approchRange;
+    [SerializeField] private ParticleSystem boom;
+    private GameObject _grabber;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,17 +22,25 @@ public class Orphan : MonoBehaviour, IBombable
     {
         if (_bezos != null)
         {
-            if ((_bezos.transform.position - transform.position).magnitude <= approchRange)
-            rb.linearVelocity = speed * (_bezos.transform.position - transform.position).normalized;
+            if ((_bezos.transform.position - transform.position).magnitude >= approchRange)
+                rb.linearVelocity = speed * (_bezos.transform.position - transform.position).normalized;
+            else rb.linearVelocity = Vector2.zero;
         }
     }
     public void OnBomb()
     {
         Die();
     }
+    public void OnGrab(GameObject grabber)
+    {
+        if (_grabber != null) _grabber.GetComponent<IGrabber>().UnGrab();
+        _grabber = grabber;
+    }
     public void Die()
     {
         // play explosion? 
+        boom.Play();
+        Destroy(gameObject, 0.2f);
     }
     public void Target(JeffreyBezos bezos)
     {

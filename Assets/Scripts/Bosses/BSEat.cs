@@ -1,8 +1,12 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BSEat : IState
 {
     private JeffreyBezos _bezos;
+    private Vector2 _startVector;
+    private float step;
+    private Orphan food;
 
     public BSEat(JeffreyBezos bezos)
     {
@@ -10,7 +14,8 @@ public class BSEat : IState
     }
     public void Enter()
     {
-        
+        food = _bezos.food.GetComponent<Orphan>();
+        _startVector = food.transform.position;
     }
 
     public void Exit()
@@ -21,6 +26,14 @@ public class BSEat : IState
     public void Update()
     {
         _bezos.DrainMeatGague();
+        _bezos.food.transform.position = Vector2.Lerp(_startVector, _bezos.transform.position, step/_bezos.StepsToEat);
+        if (_bezos.StepsToEat > step)
+        {
+            food.Die();
+            _bezos.MeatGague += _bezos.OrphanMeatAmount;
+            if (_bezos.CheckForOrphans()) _bezos.MyStateMachine.ChangeState(_bezos.MyStateMachine.StateEat);
+            else _bezos.MyStateMachine.ChangeState(_bezos.MyStateMachine.StateShoot);
+        }
     }
 
     
