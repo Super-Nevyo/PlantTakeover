@@ -11,6 +11,8 @@ public class BSDie : IState
     public void Enter()
     {
         _bezos.StopCoroutine(_bezos.SpawnOrphansEvery(_bezos.SpawnOrphansEverySecs, _bezos.SpawnOrphansVeriationSecs));
+        _bezos.Anim.enabled = false;
+        _bezos.Mech.sprite = _bezos.Dead;
     }
 
     public void Exit()

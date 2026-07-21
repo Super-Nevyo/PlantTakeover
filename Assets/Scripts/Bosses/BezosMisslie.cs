@@ -54,6 +54,7 @@ public class BezosMisslie : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("hit");
         if (step < _targetTime)
             StartCoroutine(Explode());
     }

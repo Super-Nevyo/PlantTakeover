@@ -11,7 +11,8 @@ public class Orphan : MonoBehaviour, IBombable, IGrabbable
     [SerializeField] private ParticleSystem boom;
     [SerializeField] private float meatValue;
     private bool eaten;
-    private GameObject _grabber;
+    private IGrabber _grabber;
+    private bool _isGrabbed;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,7 +23,7 @@ public class Orphan : MonoBehaviour, IBombable, IGrabbable
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (_bezos != null)
+        if (_bezos != null && !_isGrabbed)
         {
             if ((_bezos.transform.position - transform.position).magnitude >= approchRange)
                 rb.linearVelocity = speed * (_bezos.transform.position - transform.position).normalized;
@@ -33,10 +34,14 @@ public class Orphan : MonoBehaviour, IBombable, IGrabbable
     {
         Die();
     }
-    public void OnGrab(GameObject grabber)
+    public void OnGrab(IGrabber grabber)
     {
-        if (_grabber != null) _grabber.GetComponent<IGrabber>().UnGrab();
+        if (_grabber != null) _grabber.UnGrab();
         _grabber = grabber;
+        transform.position = _grabber.GetGrabTarget().position;
+        transform.parent = _grabber.GetGrabTarget();
+        _isGrabbed = true;
+        rb.linearVelocity = Vector2.zero;
     }
     public void Die()
     {
