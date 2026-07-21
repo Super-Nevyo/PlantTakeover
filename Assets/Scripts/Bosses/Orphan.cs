@@ -9,6 +9,8 @@ public class Orphan : MonoBehaviour, IBombable, IGrabbable
     [SerializeField] private Vector2 spawnOffset;
     [SerializeField] private float approchRange;
     [SerializeField] private ParticleSystem boom;
+    [SerializeField] private float meatValue;
+    private bool eaten;
     private GameObject _grabber;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -41,6 +43,16 @@ public class Orphan : MonoBehaviour, IBombable, IGrabbable
         // play explosion? 
         boom.Play();
         Destroy(gameObject, 0.2f);
+    }
+    public float Eaten()
+    {
+        Die();
+        if (!eaten)
+        {
+            eaten = true;
+            return meatValue;
+        }
+        else return 0;
     }
     public void Target(JeffreyBezos bezos)
     {

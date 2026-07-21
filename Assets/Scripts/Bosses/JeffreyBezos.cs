@@ -18,7 +18,6 @@ public class JeffreyBezos : MonoBehaviour, IGrabber
     public float MeatGague;
     public float MaxMeatGague;
     public float MeatGagueDrainRate;
-    public float OrphanMeatAmount;
     [SerializeField] public Transform GrabTarget;
     [SerializeField] public float StepsToEat;
     public float DistanceToPlayer => (TargetPlayer.transform.position - transform.position).magnitude;
@@ -38,7 +37,7 @@ public class JeffreyBezos : MonoBehaviour, IGrabber
 
     public bool CheckForOrphans()
     {
-        food = Physics2D.OverlapCircle(transform.position, OrphanCheckDistance, LayerMask.GetMask("Orphans"));
+        food = Physics2D.OverlapCircle(transform.position, OrphanCheckDistance, LayerMask.GetMask("Orphan"));
         return (food != null);
     }
     public IEnumerator SpawnOrphansEvery(float between, float veriation)

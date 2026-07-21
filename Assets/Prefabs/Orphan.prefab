@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8427465469002283445}
   - component: {fileID: 3465133331045093129}
   - component: {fileID: 5670559392522857513}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Orphan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4336306796519385094}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.32631, y: 0.41079, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -112,6 +112,7 @@ MonoBehaviour:
   spawnOffset: {x: 0, y: 0}
   approchRange: 2
   boom: {fileID: 5818637981842395572}
+  meatValue: 30
 --- !u!50 &3465133331045093129
 Rigidbody2D:
   serializedVersion: 5

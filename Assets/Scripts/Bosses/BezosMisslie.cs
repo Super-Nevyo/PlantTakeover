@@ -28,8 +28,9 @@ public class BezosMisslie : MonoBehaviour
         if (step < _targetTime)
         {
             step += Time.fixedDeltaTime;
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, 0, Mathf.Atan2(_target.transform.position.x - transform.position.x, _target.transform.position.y - transform.position.y) * Mathf.Rad2Deg), rotatespeed * Time.fixedDeltaTime);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, 0, Mathf.Atan2(_target.transform.position.y - transform.position.y, _target.transform.position.x - transform.position.x) * Mathf.Rad2Deg), rotatespeed * Time.fixedDeltaTime);
         }
+        //Debug.Log(Mathf.Atan2(_target.transform.position.x - transform.position.x, _target.transform.position.y - transform.position.y) * Mathf.Rad2Deg);
         transform.position += Time.fixedDeltaTime * speed * transform.right;
     }
     private IEnumerator Explode()
@@ -38,7 +39,7 @@ public class BezosMisslie : MonoBehaviour
         // maybe play beep sfx
         yield return new WaitForSeconds(timeAfterBeep);
         particles.Play();
-        _hits = Physics2D.OverlapCircleAll(transform.position, explosionSize, LayerMask.GetMask("player"));
+        _hits = Physics2D.OverlapCircleAll(transform.position, explosionSize, LayerMask.GetMask("Player","Orphan"));
         foreach (var hit in _hits)
         {
             hit.GetComponent<IBombable>()?.OnBomb();
