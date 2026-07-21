@@ -7,14 +7,12 @@ public class PlayerStateMachine
     public PIdleState IdleState;
     public PAimState AimState;
     public PMoveState MoveState;
-    public PGrabState GrabState;
     public PlayerStateMachine(Player player)
     {
         _player = player;
         IdleState = new PIdleState(_player);
         AimState = new PAimState(_player);
         MoveState = new PMoveState(_player);
-        GrabState = new PGrabState(_player);
     }
 
     public void Initalize(IState state)

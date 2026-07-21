@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class JeffreyBezos : MonoBehaviour, IGrabber
@@ -19,9 +20,6 @@ public class JeffreyBezos : MonoBehaviour, IGrabber
     public float MeatGagueDrainRate;
     [SerializeField] public Transform GrabTarget;
     [SerializeField] public float StepsToEat;
-    public Animator Anim;
-    public SpriteRenderer Mech;
-    public Sprite Dead;
     public float DistanceToPlayer => (TargetPlayer.transform.position - transform.position).magnitude;
     void OnEnable()
     {
@@ -69,6 +67,5 @@ public class JeffreyBezos : MonoBehaviour, IGrabber
     public void UnGrab()
     {
         MyStateMachine.ChangeState(MyStateMachine.StateShoot);//StateFly); if state fly exists put it here
-        food = null;
     }
 }

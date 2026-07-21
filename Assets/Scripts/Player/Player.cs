@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Player : MonoBehaviour, IGrabber
+public class Player : MonoBehaviour
 {
     public PlayerStateMachine MyStateMachine;
     public GrabbyVines Arms;
@@ -13,9 +13,6 @@ public class Player : MonoBehaviour, IGrabber
     [HideInInspector] public Vector2 WorldMousePosition;
     [HideInInspector] public Vector2 AimPosition;
     [HideInInspector] public Vector2 ArmPosition;
-    [HideInInspector] public Transform GrabTarget;
-    public Transform GrabPoint;
-    [SerializeField] private float grabSize;
 
     void OnEnable()
     {
@@ -39,17 +36,6 @@ public class Player : MonoBehaviour, IGrabber
 
     public bool IsGrabbable()
     {
-        GrabTarget = Physics2D.OverlapCircle(GrabPoint.position, grabSize, LayerMask.GetMask("Orphan"))?.GetComponent<Transform>();
-        return GrabTarget != null;
-    }
-
-    public Transform GetGrabTarget()
-    {
-        return GrabPoint;
-    }
-
-    public void UnGrab()
-    {
-        GrabTarget = null;
+        return false;
     }
 }

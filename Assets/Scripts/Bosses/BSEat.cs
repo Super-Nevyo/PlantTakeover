@@ -16,9 +16,7 @@ public class BSEat : IState
     {
         food = _bezos.food.GetComponent<Orphan>();
         _startVector = food.transform.position;
-        _bezos.GrabTarget.position = _startVector;
         step = 0;
-        food.OnGrab(_bezos);
     }
 
     public void Exit()
@@ -31,7 +29,7 @@ public class BSEat : IState
         if (food != null)
         {
             _bezos.DrainMeatGague();
-            _bezos.GrabTarget.position = Vector2.Lerp(_startVector, _bezos.transform.position, step / _bezos.StepsToEat);
+            _bezos.food.transform.position = Vector2.Lerp(_startVector, _bezos.transform.position, step / _bezos.StepsToEat);
             step += Time.fixedDeltaTime;
             if (_bezos.StepsToEat < step)
             {

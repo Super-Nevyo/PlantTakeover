@@ -2,5 +2,5 @@ using UnityEngine;
 
 public interface IGrabbable
 {
-    public void OnGrab(IGrabber grabber);
+    public void OnGrab(GameObject grabber);
 }
